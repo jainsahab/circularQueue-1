@@ -27,7 +27,7 @@ int enqueue(Queue *queue,void* element){
 };
 
 int isEmpty(Queue* queue){
-	return ((queue->rear-1)+(queue->front) == -2);
+	return ((queue->rear)+(queue->front) == -1);
 };
 
 void* dequeue(Queue *queue){
